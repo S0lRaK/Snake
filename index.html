@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake game</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Snake Game">
+		<meta name="author" content="Carlos J. García Carmona">
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<!-- Own files -->
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/events.js"></script>
+		<script>
+			$(document).ready(function(){
+				events.extractCookie();
+			});
+		</script>
+	</head>
+	<body>
+		<div id='game'> 
+            <div id='gameField'>  
+            </div> 
+            <div id='gameInfo'> 
+				<div id='points'>
+					<div>Your score:</div>
+					<div id='score'>0</div>
+					<div>Speed:</div>
+					<div id='speed'>1</div>
+					<br>
+					<div id="snakeColor">
+						<div>0 = blue | 1 = white</div>
+						<input type="text" id="changeSnakeColor"/>
+						<!-- <input type="color" name="changeSnakeColor"/> -->
+					</div>
+				</div>
+				<div id='gamemsg'>
+					<div id='nextRndMsg'>Next Round!</div>
+					<div id='loseMsg'>You lose! Try again</div>
+				</div>
+				<div id='rules'>
+					<p>Press Space to start or restart the game</p>
+					<p>Use arrows to move</p>
+					<p>Press Esc to quit</p>
+				</div>
+            </div> 
+        </div> 
+	</body>
+</html>
